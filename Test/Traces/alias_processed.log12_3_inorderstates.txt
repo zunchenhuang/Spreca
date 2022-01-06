@@ -1,0 +1,82 @@
+Instruction 0 Init
+Hot-Miss: 0
+Cold-Miss: 0
+0x602034 -1
+0x602038 -1
+0x60203c -1
+0x7ffc677a2b84 -1
+0x7ffc677a2b88 -1
+0x7ffc677a2b8c -1
+Instruction 1 3_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x602034 -1
+0x602038 -1
+0x60203c -1
+0x7ffc677a2b84 -1
+0x7ffc677a2b88 0
+0x7ffc677a2b8c -1
+Instruction 2 7_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x602034 -1
+0x602038 -1
+0x60203c -1
+0x7ffc677a2b84 -1
+0x7ffc677a2b88 1
+0x7ffc677a2b8c 0
+Instruction 3 9_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x602034 0
+0x602038 -1
+0x60203c -1
+0x7ffc677a2b84 -1
+0x7ffc677a2b88 2
+0x7ffc677a2b8c 1
+Instruction 4 12_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x602034 1
+0x602038 0
+0x60203c -1
+0x7ffc677a2b84 -1
+0x7ffc677a2b88 3
+0x7ffc677a2b8c 2
+Instruction 5 15_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x602034 2
+0x602038 1
+0x60203c 0
+0x7ffc677a2b84 -1
+0x7ffc677a2b88 3
+0x7ffc677a2b8c 3
+Instruction 6 18_0
+Hot-Miss: 1
+Cold-Miss: 0
+0x602034 3
+0x602038 2
+0x60203c 1
+0x7ffc677a2b84 -1
+0x7ffc677a2b88 3
+0x7ffc677a2b8c 0
+Instruction 7 21_0
+Hot-Miss: 1
+Cold-Miss: 0
+0x602034 0
+0x602038 3
+0x60203c 2
+0x7ffc677a2b84 -1
+0x7ffc677a2b88 3
+0x7ffc677a2b8c 1
+Instruction 8 22_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x602034 1
+0x602038 3
+0x60203c 3
+0x7ffc677a2b84 0
+0x7ffc677a2b88 3
+0x7ffc677a2b8c 2
+HotMisses: 2 ColdMisses: 6

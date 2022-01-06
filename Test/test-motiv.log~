@@ -1,0 +1,13 @@
+Load: 0x60203c ID: 14 @Ln,Col: 12,12
+Load: 0x602040 ID: 19 @Ln,Col: 13,12
+Load: 0x602044 ID: 24 @Ln,Col: 14,12
+Load: 0x7fff7dfc3cfc ID: 29 @Ln,Col: 16,5
+SymbolicStore: 0x60203c 0x602040 0x602044 0x602048 ID: 37 @Ln,Col: 16,3
+DDEP: SrcID: 29 DestID: 37
+DDEP: SrcID: 14 DestID: 37
+DDEP: SrcID: 19 DestID: 37
+DDEP: SrcID: 24 DestID: 37
+Store: 0x7fff7dfc3cfc ID: 38 @Ln,Col: 18,3
+DDEP: SrcID: 37 DestID: 38
+Load: 0x60204c ID: 40 @Ln,Col: 20,3
+

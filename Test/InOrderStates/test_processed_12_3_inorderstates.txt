@@ -1,0 +1,82 @@
+Instruction 0 Init
+Hot-Miss: 0
+Cold-Miss: 0
+0x404034 -1
+0x404038 -1
+0x40403c -1
+0x7ffeed554984 -1
+0x7ffeed554988 -1
+0x7ffeed55498c -1
+Instruction 1 3_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x404034 -1
+0x404038 -1
+0x40403c -1
+0x7ffeed554984 -1
+0x7ffeed554988 0
+0x7ffeed55498c -1
+Instruction 2 7_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x404034 -1
+0x404038 -1
+0x40403c -1
+0x7ffeed554984 -1
+0x7ffeed554988 1
+0x7ffeed55498c 0
+Instruction 3 9_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x404034 0
+0x404038 -1
+0x40403c -1
+0x7ffeed554984 -1
+0x7ffeed554988 2
+0x7ffeed55498c 1
+Instruction 4 12_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x404034 1
+0x404038 0
+0x40403c -1
+0x7ffeed554984 -1
+0x7ffeed554988 3
+0x7ffeed55498c 2
+Instruction 5 15_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x404034 2
+0x404038 1
+0x40403c 0
+0x7ffeed554984 -1
+0x7ffeed554988 3
+0x7ffeed55498c 3
+Instruction 6 18_0
+Hot-Miss: 1
+Cold-Miss: 0
+0x404034 3
+0x404038 2
+0x40403c 1
+0x7ffeed554984 -1
+0x7ffeed554988 3
+0x7ffeed55498c 0
+Instruction 7 21_0
+Hot-Miss: 1
+Cold-Miss: 0
+0x404034 0
+0x404038 3
+0x40403c 2
+0x7ffeed554984 -1
+0x7ffeed554988 3
+0x7ffeed55498c 1
+Instruction 8 22_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x404034 1
+0x404038 3
+0x40403c 3
+0x7ffeed554984 0
+0x7ffeed554988 3
+0x7ffeed55498c 2
+HotMisses: 2 ColdMisses: 6

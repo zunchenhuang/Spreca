@@ -1,0 +1,294 @@
+Cache Setting:			
+	Cache Size:			20
+	Cache Assoc:		5
+	Cache Line Size:	4
+	Cache Set Number:	1
+	Cache Offset Bits:	2
+	Cache Index Bits:	0
+	Cache Tag Bits:		62
+TRACE SIZE IS : 7
+MemOP 0 : LD/ST: 1 InstID:2_0 Non-Symbolic Addr: 0x7ffd85a8c728
+MemOP 1 : LD/ST: 1 InstID:6_0 Non-Symbolic Addr: 0x7ffd85a8c72c
+MemOP 2 : LD/ST: 0 InstID:7_0 Non-Symbolic Addr: 0x601034
+MemOP 3 : LD/ST: 0 InstID:10_0 Non-Symbolic Addr: 0x601038
+MemOP 4 : LD/ST: 0 InstID:13_0 Non-Symbolic Addr: 0x60103c
+MemOP 5 : LD/ST: 0 InstID:16_0 Non-Symbolic Addr: 0x7ffd85a8c72c
+MemOP 6 : LD/ST: 1 InstID:19_0 Symbolic Addrs: 0x601034 0x601038 0x60103c 
+ROUND-------------: 0
+pc size is : 8 Ages size is 8 Unique addrs size is : 5 
+10_0 Happens before: 	19_0	
+13_0 Happens before: 	19_0	
+16_0 Happens before: 	19_0	
+19_0 Happens before: 	
+2_0 Happens before: 	19_0	6_0	16_0	
+6_0 Happens before: 	19_0	16_0	
+7_0 Happens before: 	19_0	
+Init Happens before: 	13_0	19_0	10_0	7_0	2_0	6_0	16_0	
+
+Start Z3 Checking:Init
+May miss expression is (ast-vector)
+UNSAT
+
+Start Z3 Checking:2_0
+May miss expression is (ast-vector
+  (and (= PC_2_0 (+ PC_10_0 1))
+       (or (and (= age_0x7ffd85a8c728_Post_10_0 5)
+                (< agePrime_0x7ffd85a8c728_Post_10_0 5))
+           (and (< age_0x7ffd85a8c728_Post_10_0 5)
+                (= agePrime_0x7ffd85a8c728_Post_10_0 5))))
+  (and (= PC_2_0 (+ PC_13_0 1))
+       (or (and (= age_0x7ffd85a8c728_Post_13_0 5)
+                (< agePrime_0x7ffd85a8c728_Post_13_0 5))
+           (and (< age_0x7ffd85a8c728_Post_13_0 5)
+                (= agePrime_0x7ffd85a8c728_Post_13_0 5))))
+  (and (= PC_2_0 (+ PC_7_0 1))
+       (or (and (= age_0x7ffd85a8c728_Post_7_0 5)
+                (< agePrime_0x7ffd85a8c728_Post_7_0 5))
+           (and (< age_0x7ffd85a8c728_Post_7_0 5)
+                (= agePrime_0x7ffd85a8c728_Post_7_0 5))))
+  (and (= PC_2_0 (+ PC_Init 1))
+       (or (and (= age_0x7ffd85a8c728_Post_Init 5)
+                (< agePrime_0x7ffd85a8c728_Post_Init 5))
+           (and (< age_0x7ffd85a8c728_Post_Init 5)
+                (= agePrime_0x7ffd85a8c728_Post_Init 5)))))
+UNSAT
+
+Start Z3 Checking:6_0
+May miss expression is (ast-vector
+  (and (= PC_6_0 (+ PC_10_0 1))
+       (or (and (= age_0x7ffd85a8c72c_Post_10_0 5)
+                (< agePrime_0x7ffd85a8c72c_Post_10_0 5))
+           (and (< age_0x7ffd85a8c72c_Post_10_0 5)
+                (= agePrime_0x7ffd85a8c72c_Post_10_0 5))))
+  (and (= PC_6_0 (+ PC_13_0 1))
+       (or (and (= age_0x7ffd85a8c72c_Post_13_0 5)
+                (< agePrime_0x7ffd85a8c72c_Post_13_0 5))
+           (and (< age_0x7ffd85a8c72c_Post_13_0 5)
+                (= agePrime_0x7ffd85a8c72c_Post_13_0 5))))
+  (and (= PC_6_0 (+ PC_2_0 1))
+       (or (and (= age_0x7ffd85a8c72c_Post_2_0 5)
+                (< agePrime_0x7ffd85a8c72c_Post_2_0 5))
+           (and (< age_0x7ffd85a8c72c_Post_2_0 5)
+                (= agePrime_0x7ffd85a8c72c_Post_2_0 5))))
+  (and (= PC_6_0 (+ PC_7_0 1))
+       (or (and (= age_0x7ffd85a8c72c_Post_7_0 5)
+                (< agePrime_0x7ffd85a8c72c_Post_7_0 5))
+           (and (< age_0x7ffd85a8c72c_Post_7_0 5)
+                (= agePrime_0x7ffd85a8c72c_Post_7_0 5)))))
+UNSAT
+
+Start Z3 Checking:7_0
+May miss expression is (ast-vector
+  (and (= PC_7_0 (+ PC_10_0 1))
+       (or (and (= age_0x601034_Post_10_0 5) (< agePrime_0x601034_Post_10_0 5))
+           (and (< age_0x601034_Post_10_0 5) (= agePrime_0x601034_Post_10_0 5))))
+  (and (= PC_7_0 (+ PC_13_0 1))
+       (or (and (= age_0x601034_Post_13_0 5) (< agePrime_0x601034_Post_13_0 5))
+           (and (< age_0x601034_Post_13_0 5) (= agePrime_0x601034_Post_13_0 5))))
+  (and (= PC_7_0 (+ PC_16_0 1))
+       (or (and (= age_0x601034_Post_16_0 5) (< agePrime_0x601034_Post_16_0 5))
+           (and (< age_0x601034_Post_16_0 5) (= agePrime_0x601034_Post_16_0 5))))
+  (and (= PC_7_0 (+ PC_2_0 1))
+       (or (and (= age_0x601034_Post_2_0 5) (< agePrime_0x601034_Post_2_0 5))
+           (and (< age_0x601034_Post_2_0 5) (= agePrime_0x601034_Post_2_0 5))))
+  (and (= PC_7_0 (+ PC_6_0 1))
+       (or (and (= age_0x601034_Post_6_0 5) (< agePrime_0x601034_Post_6_0 5))
+           (and (< age_0x601034_Post_6_0 5) (= agePrime_0x601034_Post_6_0 5))))
+  (and (= PC_7_0 (+ PC_Init 1))
+       (or (and (= age_0x601034_Post_Init 5) (< agePrime_0x601034_Post_Init 5))
+           (and (< age_0x601034_Post_Init 5) (= agePrime_0x601034_Post_Init 5)))))
+UNSAT
+
+Start Z3 Checking:10_0
+May miss expression is (ast-vector
+  (and (= PC_10_0 (+ PC_13_0 1))
+       (or (and (= age_0x601038_Post_13_0 5) (< agePrime_0x601038_Post_13_0 5))
+           (and (< age_0x601038_Post_13_0 5) (= agePrime_0x601038_Post_13_0 5))))
+  (and (= PC_10_0 (+ PC_16_0 1))
+       (or (and (= age_0x601038_Post_16_0 5) (< agePrime_0x601038_Post_16_0 5))
+           (and (< age_0x601038_Post_16_0 5) (= agePrime_0x601038_Post_16_0 5))))
+  (and (= PC_10_0 (+ PC_2_0 1))
+       (or (and (= age_0x601038_Post_2_0 5) (< agePrime_0x601038_Post_2_0 5))
+           (and (< age_0x601038_Post_2_0 5) (= agePrime_0x601038_Post_2_0 5))))
+  (and (= PC_10_0 (+ PC_6_0 1))
+       (or (and (= age_0x601038_Post_6_0 5) (< agePrime_0x601038_Post_6_0 5))
+           (and (< age_0x601038_Post_6_0 5) (= agePrime_0x601038_Post_6_0 5))))
+  (and (= PC_10_0 (+ PC_7_0 1))
+       (or (and (= age_0x601038_Post_7_0 5) (< agePrime_0x601038_Post_7_0 5))
+           (and (< age_0x601038_Post_7_0 5) (= agePrime_0x601038_Post_7_0 5))))
+  (and (= PC_10_0 (+ PC_Init 1))
+       (or (and (= age_0x601038_Post_Init 5) (< agePrime_0x601038_Post_Init 5))
+           (and (< age_0x601038_Post_Init 5) (= agePrime_0x601038_Post_Init 5)))))
+UNSAT
+
+Start Z3 Checking:13_0
+May miss expression is (ast-vector
+  (and (= PC_13_0 (+ PC_10_0 1))
+       (or (and (= age_0x60103c_Post_10_0 5) (< agePrime_0x60103c_Post_10_0 5))
+           (and (< age_0x60103c_Post_10_0 5) (= agePrime_0x60103c_Post_10_0 5))))
+  (and (= PC_13_0 (+ PC_16_0 1))
+       (or (and (= age_0x60103c_Post_16_0 5) (< agePrime_0x60103c_Post_16_0 5))
+           (and (< age_0x60103c_Post_16_0 5) (= agePrime_0x60103c_Post_16_0 5))))
+  (and (= PC_13_0 (+ PC_2_0 1))
+       (or (and (= age_0x60103c_Post_2_0 5) (< agePrime_0x60103c_Post_2_0 5))
+           (and (< age_0x60103c_Post_2_0 5) (= agePrime_0x60103c_Post_2_0 5))))
+  (and (= PC_13_0 (+ PC_6_0 1))
+       (or (and (= age_0x60103c_Post_6_0 5) (< agePrime_0x60103c_Post_6_0 5))
+           (and (< age_0x60103c_Post_6_0 5) (= agePrime_0x60103c_Post_6_0 5))))
+  (and (= PC_13_0 (+ PC_7_0 1))
+       (or (and (= age_0x60103c_Post_7_0 5) (< agePrime_0x60103c_Post_7_0 5))
+           (and (< age_0x60103c_Post_7_0 5) (= agePrime_0x60103c_Post_7_0 5))))
+  (and (= PC_13_0 (+ PC_Init 1))
+       (or (and (= age_0x60103c_Post_Init 5) (< agePrime_0x60103c_Post_Init 5))
+           (and (< age_0x60103c_Post_Init 5) (= agePrime_0x60103c_Post_Init 5)))))
+UNSAT
+
+Start Z3 Checking:16_0
+May miss expression is (ast-vector
+  (and (= PC_16_0 (+ PC_10_0 1))
+       (or (and (= age_0x7ffd85a8c72c_Post_10_0 5)
+                (< agePrime_0x7ffd85a8c72c_Post_10_0 5))
+           (and (< age_0x7ffd85a8c72c_Post_10_0 5)
+                (= agePrime_0x7ffd85a8c72c_Post_10_0 5))))
+  (and (= PC_16_0 (+ PC_13_0 1))
+       (or (and (= age_0x7ffd85a8c72c_Post_13_0 5)
+                (< agePrime_0x7ffd85a8c72c_Post_13_0 5))
+           (and (< age_0x7ffd85a8c72c_Post_13_0 5)
+                (= agePrime_0x7ffd85a8c72c_Post_13_0 5))))
+  (and (= PC_16_0 (+ PC_6_0 1))
+       (or (and (= age_0x7ffd85a8c72c_Post_6_0 5)
+                (< agePrime_0x7ffd85a8c72c_Post_6_0 5))
+           (and (< age_0x7ffd85a8c72c_Post_6_0 5)
+                (= agePrime_0x7ffd85a8c72c_Post_6_0 5))))
+  (and (= PC_16_0 (+ PC_7_0 1))
+       (or (and (= age_0x7ffd85a8c72c_Post_7_0 5)
+                (< agePrime_0x7ffd85a8c72c_Post_7_0 5))
+           (and (< age_0x7ffd85a8c72c_Post_7_0 5)
+                (= agePrime_0x7ffd85a8c72c_Post_7_0 5)))))
+UNSAT
+
+Start Z3 Checking:19_0
+May miss expression is (ast-vector
+  (and (= PC_19_0 (+ PC_10_0 1))
+       (= symbolicVar 6295604)
+       (= symbolicVarPrime 6295608)
+       (or (and (= age_0x601034_Post_10_0 5) (< agePrime_0x601038_Post_10_0 5))
+           (and (< age_0x601034_Post_10_0 5) (= agePrime_0x601038_Post_10_0 5))))
+  (and (= PC_19_0 (+ PC_10_0 1))
+       (= symbolicVar 6295604)
+       (= symbolicVarPrime 6295612)
+       (or (and (= age_0x601034_Post_10_0 5) (< agePrime_0x60103c_Post_10_0 5))
+           (and (< age_0x601034_Post_10_0 5) (= agePrime_0x60103c_Post_10_0 5))))
+  (and (= PC_19_0 (+ PC_10_0 1))
+       (= symbolicVar 6295608)
+       (= symbolicVarPrime 6295604)
+       (or (and (= age_0x601038_Post_10_0 5) (< agePrime_0x601034_Post_10_0 5))
+           (and (< age_0x601038_Post_10_0 5) (= agePrime_0x601034_Post_10_0 5))))
+  (and (= PC_19_0 (+ PC_10_0 1))
+       (= symbolicVar 6295608)
+       (= symbolicVarPrime 6295612)
+       (or (and (= age_0x601038_Post_10_0 5) (< agePrime_0x60103c_Post_10_0 5))
+           (and (< age_0x601038_Post_10_0 5) (= agePrime_0x60103c_Post_10_0 5))))
+  (and (= PC_19_0 (+ PC_10_0 1))
+       (= symbolicVar 6295612)
+       (= symbolicVarPrime 6295604)
+       (or (and (= age_0x60103c_Post_10_0 5) (< agePrime_0x601034_Post_10_0 5))
+           (and (< age_0x60103c_Post_10_0 5) (= agePrime_0x601034_Post_10_0 5))))
+  (and (= PC_19_0 (+ PC_10_0 1))
+       (= symbolicVar 6295612)
+       (= symbolicVarPrime 6295608)
+       (or (and (= age_0x60103c_Post_10_0 5) (< agePrime_0x601038_Post_10_0 5))
+           (and (< age_0x60103c_Post_10_0 5) (= agePrime_0x601038_Post_10_0 5))))
+  (and (= PC_19_0 (+ PC_13_0 1))
+       (= symbolicVar 6295604)
+       (= symbolicVarPrime 6295608)
+       (or (and (= age_0x601034_Post_13_0 5) (< agePrime_0x601038_Post_13_0 5))
+           (and (< age_0x601034_Post_13_0 5) (= agePrime_0x601038_Post_13_0 5))))
+  (and (= PC_19_0 (+ PC_13_0 1))
+       (= symbolicVar 6295604)
+       (= symbolicVarPrime 6295612)
+       (or (and (= age_0x601034_Post_13_0 5) (< agePrime_0x60103c_Post_13_0 5))
+           (and (< age_0x601034_Post_13_0 5) (= agePrime_0x60103c_Post_13_0 5))))
+  (and (= PC_19_0 (+ PC_13_0 1))
+       (= symbolicVar 6295608)
+       (= symbolicVarPrime 6295604)
+       (or (and (= age_0x601038_Post_13_0 5) (< agePrime_0x601034_Post_13_0 5))
+           (and (< age_0x601038_Post_13_0 5) (= agePrime_0x601034_Post_13_0 5))))
+  (and (= PC_19_0 (+ PC_13_0 1))
+       (= symbolicVar 6295608)
+       (= symbolicVarPrime 6295612)
+       (or (and (= age_0x601038_Post_13_0 5) (< agePrime_0x60103c_Post_13_0 5))
+           (and (< age_0x601038_Post_13_0 5) (= agePrime_0x60103c_Post_13_0 5))))
+  (and (= PC_19_0 (+ PC_13_0 1))
+       (= symbolicVar 6295612)
+       (= symbolicVarPrime 6295604)
+       (or (and (= age_0x60103c_Post_13_0 5) (< agePrime_0x601034_Post_13_0 5))
+           (and (< age_0x60103c_Post_13_0 5) (= agePrime_0x601034_Post_13_0 5))))
+  (and (= PC_19_0 (+ PC_13_0 1))
+       (= symbolicVar 6295612)
+       (= symbolicVarPrime 6295608)
+       (or (and (= age_0x60103c_Post_13_0 5) (< agePrime_0x601038_Post_13_0 5))
+           (and (< age_0x60103c_Post_13_0 5) (= agePrime_0x601038_Post_13_0 5))))
+  (and (= PC_19_0 (+ PC_16_0 1))
+       (= symbolicVar 6295604)
+       (= symbolicVarPrime 6295608)
+       (or (and (= age_0x601034_Post_16_0 5) (< agePrime_0x601038_Post_16_0 5))
+           (and (< age_0x601034_Post_16_0 5) (= agePrime_0x601038_Post_16_0 5))))
+  (and (= PC_19_0 (+ PC_16_0 1))
+       (= symbolicVar 6295604)
+       (= symbolicVarPrime 6295612)
+       (or (and (= age_0x601034_Post_16_0 5) (< agePrime_0x60103c_Post_16_0 5))
+           (and (< age_0x601034_Post_16_0 5) (= agePrime_0x60103c_Post_16_0 5))))
+  (and (= PC_19_0 (+ PC_16_0 1))
+       (= symbolicVar 6295608)
+       (= symbolicVarPrime 6295604)
+       (or (and (= age_0x601038_Post_16_0 5) (< agePrime_0x601034_Post_16_0 5))
+           (and (< age_0x601038_Post_16_0 5) (= agePrime_0x601034_Post_16_0 5))))
+  (and (= PC_19_0 (+ PC_16_0 1))
+       (= symbolicVar 6295608)
+       (= symbolicVarPrime 6295612)
+       (or (and (= age_0x601038_Post_16_0 5) (< agePrime_0x60103c_Post_16_0 5))
+           (and (< age_0x601038_Post_16_0 5) (= agePrime_0x60103c_Post_16_0 5))))
+  (and (= PC_19_0 (+ PC_16_0 1))
+       (= symbolicVar 6295612)
+       (= symbolicVarPrime 6295604)
+       (or (and (= age_0x60103c_Post_16_0 5) (< agePrime_0x601034_Post_16_0 5))
+           (and (< age_0x60103c_Post_16_0 5) (= agePrime_0x601034_Post_16_0 5))))
+  (and (= PC_19_0 (+ PC_16_0 1))
+       (= symbolicVar 6295612)
+       (= symbolicVarPrime 6295608)
+       (or (and (= age_0x60103c_Post_16_0 5) (< agePrime_0x601038_Post_16_0 5))
+           (and (< age_0x60103c_Post_16_0 5) (= agePrime_0x601038_Post_16_0 5))))
+  (and (= PC_19_0 (+ PC_7_0 1))
+       (= symbolicVar 6295604)
+       (= symbolicVarPrime 6295608)
+       (or (and (= age_0x601034_Post_7_0 5) (< agePrime_0x601038_Post_7_0 5))
+           (and (< age_0x601034_Post_7_0 5) (= agePrime_0x601038_Post_7_0 5))))
+  (and (= PC_19_0 (+ PC_7_0 1))
+       (= symbolicVar 6295604)
+       (= symbolicVarPrime 6295612)
+       (or (and (= age_0x601034_Post_7_0 5) (< agePrime_0x60103c_Post_7_0 5))
+           (and (< age_0x601034_Post_7_0 5) (= agePrime_0x60103c_Post_7_0 5))))
+  (and (= PC_19_0 (+ PC_7_0 1))
+       (= symbolicVar 6295608)
+       (= symbolicVarPrime 6295604)
+       (or (and (= age_0x601038_Post_7_0 5) (< agePrime_0x601034_Post_7_0 5))
+           (and (< age_0x601038_Post_7_0 5) (= agePrime_0x601034_Post_7_0 5))))
+  (and (= PC_19_0 (+ PC_7_0 1))
+       (= symbolicVar 6295608)
+       (= symbolicVarPrime 6295612)
+       (or (and (= age_0x601038_Post_7_0 5) (< agePrime_0x60103c_Post_7_0 5))
+           (and (< age_0x601038_Post_7_0 5) (= agePrime_0x60103c_Post_7_0 5))))
+  (and (= PC_19_0 (+ PC_7_0 1))
+       (= symbolicVar 6295612)
+       (= symbolicVarPrime 6295604)
+       (or (and (= age_0x60103c_Post_7_0 5) (< agePrime_0x601034_Post_7_0 5))
+           (and (< age_0x60103c_Post_7_0 5) (= agePrime_0x601034_Post_7_0 5))))
+  (and (= PC_19_0 (+ PC_7_0 1))
+       (= symbolicVar 6295612)
+       (= symbolicVarPrime 6295608)
+       (or (and (= age_0x60103c_Post_7_0 5) (< agePrime_0x601038_Post_7_0 5))
+           (and (< age_0x60103c_Post_7_0 5) (= agePrime_0x601038_Post_7_0 5)))))
+UNSAT
+Current Round Time Elapsed: 0.794574
+Finished All

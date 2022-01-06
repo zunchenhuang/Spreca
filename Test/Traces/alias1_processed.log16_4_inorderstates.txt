@@ -1,0 +1,65 @@
+Instruction 0 Init
+Hot-Miss: 0
+Cold-Miss: 0
+0x601034 -1
+0x601038 -1
+0x60103c -1
+0x7ffd85a8c728 -1
+0x7ffd85a8c72c -1
+Instruction 1 2_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x601034 -1
+0x601038 -1
+0x60103c -1
+0x7ffd85a8c728 0
+0x7ffd85a8c72c -1
+Instruction 2 6_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x601034 -1
+0x601038 -1
+0x60103c -1
+0x7ffd85a8c728 1
+0x7ffd85a8c72c 0
+Instruction 3 7_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x601034 0
+0x601038 -1
+0x60103c -1
+0x7ffd85a8c728 2
+0x7ffd85a8c72c 1
+Instruction 4 10_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x601034 1
+0x601038 0
+0x60103c -1
+0x7ffd85a8c728 3
+0x7ffd85a8c72c 2
+Instruction 5 13_0
+Hot-Miss: 0
+Cold-Miss: 1
+0x601034 2
+0x601038 1
+0x60103c 0
+0x7ffd85a8c728 4
+0x7ffd85a8c72c 3
+Instruction 6 16_0
+Hot-Miss: 0
+Cold-Miss: 0
+0x601034 3
+0x601038 2
+0x60103c 1
+0x7ffd85a8c728 4
+0x7ffd85a8c72c 0
+Instruction 7 19_0
+Hot-Miss: 0
+Cold-Miss: 0
+0x601034 0
+0x601038 3
+0x60103c 2
+0x7ffd85a8c728 4
+0x7ffd85a8c72c 1
+HotMisses: 0 ColdMisses: 5

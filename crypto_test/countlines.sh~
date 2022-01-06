@@ -1,0 +1,38 @@
+#!usr/bin/bash
+echo "AES"
+python3 countlines.py Cipher/aes.log
+python3 countlines.py Cipher/aes_fully.log
+echo "DES"
+python3 countlines.py Cipher/des.log
+python3 countlines.py Cipher/des_fully.log
+echo "SEED"
+python3 countlines.py Cipher/seed.log
+python3 countlines.py Cipher/seed_fully.log
+echo "Camelia"
+python3 countlines.py Cipher/camellia.log
+python3 countlines.py Cipher/camellia_fully.log
+echo "Chacha20"
+python3 countlines.py Cipher/chacha20.log
+python3 countlines.py Cipher/chacha20_fully.log
+echo "IDEA"
+python3 countlines.py Cipher/idea.log
+python3 countlines.py Cipher/idea_fully.log
+echo "aria"
+python3 countlines.py Cipher/aria.log
+python3 countlines.py Cipher/aria_fully.log
+echo "sm4"
+python3 countlines.py Cipher/sm4.log
+python3 countlines.py Cipher/sm4_fully.log
+
+echo "md5"
+python3 countlines.py Hash/md5.log
+python3 countlines.py Hash/md5_fully.log
+echo "Blake2"
+python3 countlines.py Hash/blake2.log
+python3 countlines.py Hash/blake2_fully.log
+echo "sha256"
+python3 countlines.py Hash/sha256.log
+python3 countlines.py Hash/sha256_fully.log
+echo "Whirlpool"
+python3 countlines.py Hash/whirlpool.log
+python3 countlines.py Hash/whirlpool_fully.log

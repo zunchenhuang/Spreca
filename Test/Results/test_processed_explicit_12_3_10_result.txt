@@ -1,0 +1,49 @@
+Cache Setting:			
+	Cache Size:			12
+	Cache Assoc:		3
+	Cache Line Size:	4
+	Cache Set Number:	1
+	Cache Offset Bits:	2
+	Cache Index Bits:	0
+	Cache Tag Bits:		62
+TRACE SIZE IS : 8
+MemOP 0 : LD/ST: 1 InstID:3_0 Non-Symbolic Addr: 0x7ffeed554988
+MemOP 1 : LD/ST: 1 InstID:7_0 Non-Symbolic Addr: 0x7ffeed55498c
+MemOP 2 : LD/ST: 0 InstID:9_0 Non-Symbolic Addr: 0x404034
+MemOP 3 : LD/ST: 0 InstID:12_0 Non-Symbolic Addr: 0x404038
+MemOP 4 : LD/ST: 0 InstID:15_0 Non-Symbolic Addr: 0x40403c
+MemOP 5 : LD/ST: 0 InstID:18_0 Non-Symbolic Addr: 0x7ffeed55498c
+MemOP 6 : LD/ST: 1 InstID:21_0 Symbolic Addrs: 0x404034 0x404038 0x40403c 
+MemOP 7 : LD/ST: 0 InstID:22_0 Non-Symbolic Addr: 0x7ffeed554984
+ROUND-------------: 0
+12_0 Happens before: 	21_0	
+15_0 Happens before: 	21_0	
+18_0 Happens before: 	21_0	
+21_0 Happens before: 	
+22_0 Happens before: 	
+3_0 Happens before: 	21_0	7_0	18_0	
+7_0 Happens before: 	21_0	18_0	
+9_0 Happens before: 	21_0	
+Init Happens before: 	22_0	15_0	21_0	12_0	9_0	3_0	7_0	18_0	
+SAT
+Init 3_0 7_0 9_0 12_0 15_0 18_0 22_0 21_0 
+Extra miss could occur at : Ln,Col: 12,8 Inst ID: 21_0
+Symbolic V1: 0x404038
+0x404034 : -1 | -1 | -1 | 0 | 1 | 2 | 3 | 3 | 3 | 
+0x404038 : -1 | -1 | -1 | -1 | 0 | 1 | 2 | 3 | 0 | 
+0x40403c : -1 | -1 | -1 | -1 | -1 | 0 | 1 | 2 | 3 | 
+0x7ffeed554984 : -1 | -1 | -1 | -1 | -1 | -1 | -1 | 0 | 1 | 
+0x7ffeed554988 : -1 | 0 | 1 | 2 | 3 | 3 | 3 | 3 | 3 | 
+0x7ffeed55498c : -1 | -1 | 0 | 1 | 2 | 3 | 0 | 1 | 2 | 
+Symbolic V2: 0x40403c
+0x404034 : -1 | -1 | -1 | 0 | 1 | 2 | 3 | 3 | 3 | 
+0x404038 : -1 | -1 | -1 | -1 | 0 | 1 | 2 | 3 | 3 | 
+0x40403c : -1 | -1 | -1 | -1 | -1 | 0 | 1 | 2 | 0 | 
+0x7ffeed554984 : -1 | -1 | -1 | -1 | -1 | -1 | -1 | 0 | 1 | 
+0x7ffeed554988 : -1 | 0 | 1 | 2 | 3 | 3 | 3 | 3 | 3 | 
+0x7ffeed55498c : -1 | -1 | 0 | 1 | 2 | 3 | 0 | 1 | 2 | 
+Current Round Time Elapsed: 0.00078
+Current Round Skipped Permuation number: 0
+Current Round Checked Permuation number: 2
+Finished All
+Total time in seconds : 0.003425

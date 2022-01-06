@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <assert.h>
+
+int A[3];
+
+int main() {
+
+  int index = 1;
+   
+  assert(index < 3 && index >= 0);
+  /* accessGlobalVarByIndex(&index); */
+  if (A[0] > 0)
+    printf("A[0] is greater than 0. \n");
+  if (A[1] > 0)
+    printf("A[1] is greater than 0. \n");
+  if (A[2] > 0)
+    printf("A[2] is greater than 0. \n");
+// Scretely set A[index] into 1
+  if (A[index] > 0)
+    printf("A[index] is greater than 0. \n");
+
+// Write 0 into index
+  index = -1;
+  printf("Index is: %d\n", index);
+  return 0;
+}
+
+/* void accessGlobalVarByIndex(int *index){ */
+/*   if (A[0] > 0) */
+/*     printf("A[0] is greater than 0. \n"); */
+/*   if (A[1] > 0) */
+/*     printf("A[0] is greater than 0. \n"); */
+/*   if (A[2] > 0) */
+/*     printf("A[0] is greater than 0. \n"); */
+/* // Scretely set A[index] into 1 */
+/*   A[*index] = 1; */
+
+/* // Write 0 into index */
+/*   *index = -1; */
+/* } */
+

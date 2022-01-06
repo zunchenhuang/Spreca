@@ -1,0 +1,280 @@
+Cache Setting:			
+	Cache Size:			12
+	Cache Assoc:		3
+	Cache Line Size:	4
+	Cache Set Number:	1
+	Cache Offset Bits:	2
+	Cache Index Bits:	0
+	Cache Tag Bits:		62
+TRACE SIZE IS : 8
+MemOP 0 : LD/ST: 1 InstID:3_0 Non-Symbolic Addr: 0x7ffeed554988
+MemOP 1 : LD/ST: 1 InstID:7_0 Non-Symbolic Addr: 0x7ffeed55498c
+MemOP 2 : LD/ST: 0 InstID:9_0 Non-Symbolic Addr: 0x404034
+MemOP 3 : LD/ST: 0 InstID:12_0 Non-Symbolic Addr: 0x404038
+MemOP 4 : LD/ST: 0 InstID:15_0 Non-Symbolic Addr: 0x40403c
+MemOP 5 : LD/ST: 0 InstID:18_0 Non-Symbolic Addr: 0x7ffeed55498c
+MemOP 6 : LD/ST: 1 InstID:21_0 Symbolic Addrs: 0x404034 0x404038 0x40403c 
+MemOP 7 : LD/ST: 0 InstID:22_0 Non-Symbolic Addr: 0x7ffeed554984
+ROUND-------------: 0
+pc size is : 9 Ages size is 9 Unique addrs size is : 6 
+12_0 Happens before: 	21_0	
+15_0 Happens before: 	21_0	
+18_0 Happens before: 	21_0	
+21_0 Happens before: 	
+22_0 Happens before: 	
+3_0 Happens before: 	21_0	7_0	18_0	
+7_0 Happens before: 	21_0	18_0	
+9_0 Happens before: 	21_0	
+Init Happens before: 	22_0	15_0	21_0	12_0	9_0	3_0	7_0	18_0	
+
+Start Z3 Checking:3_0
+UNSAT
+Current Query Time Elapsed: 0.0103
+
+Start Z3 Checking:7_0
+UNSAT
+Current Query Time Elapsed: 0.087218
+
+Start Z3 Checking:9_0
+UNSAT
+Current Query Time Elapsed: 0.097394
+
+Start Z3 Checking:12_0
+UNSAT
+Current Query Time Elapsed: 0.048721
+
+Start Z3 Checking:15_0
+UNSAT
+Current Query Time Elapsed: 0.111187
+
+Start Z3 Checking:18_0
+UNSAT
+Current Query Time Elapsed: 0.221814
+
+Start Z3 Checking:21_0
+May miss expression is (ast-vector
+  (and (= PC_21_0 (+ PC_12_0 1))
+       (= symbolicVar 4210740)
+       (= symbolicVarPrime 4210744)
+       (= age_0x404034_Post_12_0 3)
+       (< agePrime_0x404038_Post_12_0 3)
+       (distinct agePrime_0x404038_Post_12_0 (- 1)))
+  (and (= PC_21_0 (+ PC_12_0 1))
+       (= symbolicVar 4210740)
+       (= symbolicVarPrime 4210748)
+       (= age_0x404034_Post_12_0 3)
+       (< agePrime_0x40403c_Post_12_0 3)
+       (distinct agePrime_0x40403c_Post_12_0 (- 1)))
+  (and (= PC_21_0 (+ PC_12_0 1))
+       (= symbolicVar 4210744)
+       (= symbolicVarPrime 4210740)
+       (= age_0x404038_Post_12_0 3)
+       (< agePrime_0x404034_Post_12_0 3)
+       (distinct agePrime_0x404034_Post_12_0 (- 1)))
+  (and (= PC_21_0 (+ PC_12_0 1))
+       (= symbolicVar 4210744)
+       (= symbolicVarPrime 4210748)
+       (= age_0x404038_Post_12_0 3)
+       (< agePrime_0x40403c_Post_12_0 3)
+       (distinct agePrime_0x40403c_Post_12_0 (- 1)))
+  (and (= PC_21_0 (+ PC_12_0 1))
+       (= symbolicVar 4210748)
+       (= symbolicVarPrime 4210740)
+       (= age_0x40403c_Post_12_0 3)
+       (< agePrime_0x404034_Post_12_0 3)
+       (distinct agePrime_0x404034_Post_12_0 (- 1)))
+  (and (= PC_21_0 (+ PC_12_0 1))
+       (= symbolicVar 4210748)
+       (= symbolicVarPrime 4210744)
+       (= age_0x40403c_Post_12_0 3)
+       (< agePrime_0x404038_Post_12_0 3)
+       (distinct agePrime_0x404038_Post_12_0 (- 1)))
+  (and (= PC_21_0 (+ PC_15_0 1))
+       (= symbolicVar 4210740)
+       (= symbolicVarPrime 4210744)
+       (= age_0x404034_Post_15_0 3)
+       (< agePrime_0x404038_Post_15_0 3)
+       (distinct agePrime_0x404038_Post_15_0 (- 1)))
+  (and (= PC_21_0 (+ PC_15_0 1))
+       (= symbolicVar 4210740)
+       (= symbolicVarPrime 4210748)
+       (= age_0x404034_Post_15_0 3)
+       (< agePrime_0x40403c_Post_15_0 3)
+       (distinct agePrime_0x40403c_Post_15_0 (- 1)))
+  (and (= PC_21_0 (+ PC_15_0 1))
+       (= symbolicVar 4210744)
+       (= symbolicVarPrime 4210740)
+       (= age_0x404038_Post_15_0 3)
+       (< agePrime_0x404034_Post_15_0 3)
+       (distinct agePrime_0x404034_Post_15_0 (- 1)))
+  (and (= PC_21_0 (+ PC_15_0 1))
+       (= symbolicVar 4210744)
+       (= symbolicVarPrime 4210748)
+       (= age_0x404038_Post_15_0 3)
+       (< agePrime_0x40403c_Post_15_0 3)
+       (distinct agePrime_0x40403c_Post_15_0 (- 1)))
+  (and (= PC_21_0 (+ PC_15_0 1))
+       (= symbolicVar 4210748)
+       (= symbolicVarPrime 4210740)
+       (= age_0x40403c_Post_15_0 3)
+       (< agePrime_0x404034_Post_15_0 3)
+       (distinct agePrime_0x404034_Post_15_0 (- 1)))
+  (and (= PC_21_0 (+ PC_15_0 1))
+       (= symbolicVar 4210748)
+       (= symbolicVarPrime 4210744)
+       (= age_0x40403c_Post_15_0 3)
+       (< agePrime_0x404038_Post_15_0 3)
+       (distinct agePrime_0x404038_Post_15_0 (- 1)))
+  (and (= PC_21_0 (+ PC_18_0 1))
+       (= symbolicVar 4210740)
+       (= symbolicVarPrime 4210744)
+       (= age_0x404034_Post_18_0 3)
+       (< agePrime_0x404038_Post_18_0 3)
+       (distinct agePrime_0x404038_Post_18_0 (- 1)))
+  (and (= PC_21_0 (+ PC_18_0 1))
+       (= symbolicVar 4210740)
+       (= symbolicVarPrime 4210748)
+       (= age_0x404034_Post_18_0 3)
+       (< agePrime_0x40403c_Post_18_0 3)
+       (distinct agePrime_0x40403c_Post_18_0 (- 1)))
+  (and (= PC_21_0 (+ PC_18_0 1))
+       (= symbolicVar 4210744)
+       (= symbolicVarPrime 4210740)
+       (= age_0x404038_Post_18_0 3)
+       (< agePrime_0x404034_Post_18_0 3)
+       (distinct agePrime_0x404034_Post_18_0 (- 1)))
+  (and (= PC_21_0 (+ PC_18_0 1))
+       (= symbolicVar 4210744)
+       (= symbolicVarPrime 4210748)
+       (= age_0x404038_Post_18_0 3)
+       (< agePrime_0x40403c_Post_18_0 3)
+       (distinct agePrime_0x40403c_Post_18_0 (- 1)))
+  (and (= PC_21_0 (+ PC_18_0 1))
+       (= symbolicVar 4210748)
+       (= symbolicVarPrime 4210740)
+       (= age_0x40403c_Post_18_0 3)
+       (< agePrime_0x404034_Post_18_0 3)
+       (distinct agePrime_0x404034_Post_18_0 (- 1)))
+  (and (= PC_21_0 (+ PC_18_0 1))
+       (= symbolicVar 4210748)
+       (= symbolicVarPrime 4210744)
+       (= age_0x40403c_Post_18_0 3)
+       (< agePrime_0x404038_Post_18_0 3)
+       (distinct agePrime_0x404038_Post_18_0 (- 1)))
+  (and (= PC_21_0 (+ PC_22_0 1))
+       (= symbolicVar 4210740)
+       (= symbolicVarPrime 4210744)
+       (= age_0x404034_Post_22_0 3)
+       (< agePrime_0x404038_Post_22_0 3)
+       (distinct agePrime_0x404038_Post_22_0 (- 1)))
+  (and (= PC_21_0 (+ PC_22_0 1))
+       (= symbolicVar 4210740)
+       (= symbolicVarPrime 4210748)
+       (= age_0x404034_Post_22_0 3)
+       (< agePrime_0x40403c_Post_22_0 3)
+       (distinct agePrime_0x40403c_Post_22_0 (- 1)))
+  (and (= PC_21_0 (+ PC_22_0 1))
+       (= symbolicVar 4210744)
+       (= symbolicVarPrime 4210740)
+       (= age_0x404038_Post_22_0 3)
+       (< agePrime_0x404034_Post_22_0 3)
+       (distinct agePrime_0x404034_Post_22_0 (- 1)))
+  (and (= PC_21_0 (+ PC_22_0 1))
+       (= symbolicVar 4210744)
+       (= symbolicVarPrime 4210748)
+       (= age_0x404038_Post_22_0 3)
+       (< agePrime_0x40403c_Post_22_0 3)
+       (distinct agePrime_0x40403c_Post_22_0 (- 1)))
+  (and (= PC_21_0 (+ PC_22_0 1))
+       (= symbolicVar 4210748)
+       (= symbolicVarPrime 4210740)
+       (= age_0x40403c_Post_22_0 3)
+       (< agePrime_0x404034_Post_22_0 3)
+       (distinct agePrime_0x404034_Post_22_0 (- 1)))
+  (and (= PC_21_0 (+ PC_22_0 1))
+       (= symbolicVar 4210748)
+       (= symbolicVarPrime 4210744)
+       (= age_0x40403c_Post_22_0 3)
+       (< agePrime_0x404038_Post_22_0 3)
+       (distinct agePrime_0x404038_Post_22_0 (- 1)))
+  (and (= PC_21_0 (+ PC_9_0 1))
+       (= symbolicVar 4210740)
+       (= symbolicVarPrime 4210744)
+       (= age_0x404034_Post_9_0 3)
+       (< agePrime_0x404038_Post_9_0 3)
+       (distinct agePrime_0x404038_Post_9_0 (- 1)))
+  (and (= PC_21_0 (+ PC_9_0 1))
+       (= symbolicVar 4210740)
+       (= symbolicVarPrime 4210748)
+       (= age_0x404034_Post_9_0 3)
+       (< agePrime_0x40403c_Post_9_0 3)
+       (distinct agePrime_0x40403c_Post_9_0 (- 1)))
+  (and (= PC_21_0 (+ PC_9_0 1))
+       (= symbolicVar 4210744)
+       (= symbolicVarPrime 4210740)
+       (= age_0x404038_Post_9_0 3)
+       (< agePrime_0x404034_Post_9_0 3)
+       (distinct agePrime_0x404034_Post_9_0 (- 1)))
+  (and (= PC_21_0 (+ PC_9_0 1))
+       (= symbolicVar 4210744)
+       (= symbolicVarPrime 4210748)
+       (= age_0x404038_Post_9_0 3)
+       (< agePrime_0x40403c_Post_9_0 3)
+       (distinct agePrime_0x40403c_Post_9_0 (- 1)))
+  (and (= PC_21_0 (+ PC_9_0 1))
+       (= symbolicVar 4210748)
+       (= symbolicVarPrime 4210740)
+       (= age_0x40403c_Post_9_0 3)
+       (< agePrime_0x404034_Post_9_0 3)
+       (distinct agePrime_0x404034_Post_9_0 (- 1)))
+  (and (= PC_21_0 (+ PC_9_0 1))
+       (= symbolicVar 4210748)
+       (= symbolicVarPrime 4210744)
+       (= age_0x40403c_Post_9_0 3)
+       (< agePrime_0x404038_Post_9_0 3)
+       (distinct agePrime_0x404038_Post_9_0 (- 1))))
+PC_Init	0
+PC_3_0	2
+PC_7_0	4
+PC_9_0	5
+PC_12_0	3
+PC_15_0	7
+PC_18_0	6
+PC_21_0	8
+PC_22_0	1
+SAT
+Symbolic value is : 0x404038
+Extra miss could occur at : Ln,Col: 12,8 MemOp ID: 21_0
+PC_Init to PC_22_0 values: 
+
+age_0x404034_Post_Init : (- 1) | (- 1) | (- 1) | (- 1) | (- 1) | 0 | 1 | 2 | 3 | 
+age_0x404038_Post_Init : (- 1) | (- 1) | (- 1) | 0 | 1 | 2 | 2 | 3 | 0 | 
+age_0x40403c_Post_Init : (- 1) | (- 1) | (- 1) | (- 1) | (- 1) | (- 1) | (- 1) | 0 | 1 | 
+age_0x7ffeed554984_Post_Init : (- 1) | 0 | 1 | 2 | 3 | 3 | 3 | 3 | 3 | 
+age_0x7ffeed554988_Post_Init : (- 1) | (- 1) | 0 | 1 | 2 | 3 | 3 | 3 | 3 | 
+age_0x7ffeed55498c_Post_Init : (- 1) | (- 1) | (- 1) | (- 1) | 0 | 1 | 0 | 1 | 2 | 
+Symbolic Prime value is : 0x40403c
+PC_Init	0
+PC_3_0	2
+PC_7_0	4
+PC_9_0	5
+PC_12_0	3
+PC_15_0	7
+PC_18_0	6
+PC_21_0	8
+PC_22_0	1
+
+agePrime_0x404034_Post_Init : (- 1) | (- 1) | (- 1) | (- 1) | (- 1) | 0 | 1 | 2 | 2 | 
+agePrime_0x404038_Post_Init : (- 1) | (- 1) | (- 1) | 0 | 1 | 2 | 2 | 3 | 3 | 
+agePrime_0x40403c_Post_Init : (- 1) | (- 1) | (- 1) | (- 1) | (- 1) | (- 1) | (- 1) | 0 | 0 | 
+agePrime_0x7ffeed554984_Post_Init : (- 1) | 0 | 1 | 2 | 3 | 3 | 3 | 3 | 3 | 
+agePrime_0x7ffeed554988_Post_Init : (- 1) | (- 1) | 0 | 1 | 2 | 3 | 3 | 3 | 3 | 
+agePrime_0x7ffeed55498c_Post_Init : (- 1) | (- 1) | (- 1) | (- 1) | 0 | 1 | 0 | 1 | 1 | 
+Current Query Time Elapsed: 0.009569
+
+Start Z3 Checking:22_0
+UNSAT
+Current Query Time Elapsed: 0.092286
+Current Round Time Elapsed: 0.721681
+Finished All
+Total time in seconds : 0.723558
